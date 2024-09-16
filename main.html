@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkUni - Our Journey</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>ThinkUni</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Why ThinkUni</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#" class="request-demo">Create Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Our Journey Section -->
+    <section class="journey">
+        <div class="journey-text">
+            <h2>Our Journey</h2>
+            <p><span id="typed-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non accumsan turpis, a lobortis elit. Fusce dolor leo, efficitur et dignissim ac, aliquam ac felis. </span></p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span>May 2023</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="timeline-item">
+                <span>Oct 2022</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="timeline-item">
+                <span>Feb 2022</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="timeline-item">
+                <span>Aug 2021</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplify Section -->
+    <section class="simplify-section">
+        <div class="simplify-content">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="simplify-logo">
+            <h2>THINKUNI</h2>
+            <p>FOR THE STUDENTS, BY THE STUDENTS, OF THE STUDENTS </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 ThinkUni. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Typing Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const typedText = document.getElementById('typed-text');
+            const text = typedText.textContent;
+            typedText.textContent = '';
+
+            let index = 0;
+            function type() {
+                if (index < text.length) {
+                    typedText.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 50); // Adjust typing speed here
+                }
+            }
+
+            type();
+        });
+    </script>
+    <script type="text/javascript" src='main.js'></script>
+
+</body>
+</html>
